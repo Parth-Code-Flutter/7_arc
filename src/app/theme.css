@@ -1,0 +1,31 @@
+:root {
+  /*
+   * 7ARC color system
+   * Change this file to recolor the entire website.
+   */
+  --canvas: #191918;
+  --canvas-soft: #292927;
+  --surface: #f3f1e8;
+  --surface-soft: #dfe7df;
+  --ink: #f8f7ef;
+  --ink-dark: #22221f;
+  --muted: #aaa9a0;
+  --muted-dark: #52655d;
+  --accent: #f26a36;
+  --accent-strong: #db5423;
+  --signal: #ff6b4a;
+  --violet: #8b5cf6;
+  --cyan: #48e5e2;
+  --magenta: #ff4fa3;
+  --deep-blue: #111a38;
+  --line: rgb(248 247 239 / 0.16);
+  --line-dark: rgb(16 32 26 / 0.18);
+  --glow: rgb(184 255 82 / 0.28);
+  --glow-violet: rgb(139 92 246 / 0.34);
+  --glow-cyan: rgb(72 229 226 / 0.28);
+  --glow-magenta: rgb(255 79 163 / 0.26);
+  --shadow: rgb(0 0 0 / 0.24);
+  --metal-light: #ffcc9d;
+  --metal-mid: #df763f;
+  --metal-dark: #7a351d;
+}

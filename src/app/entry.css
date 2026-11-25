@@ -1,0 +1,23 @@
+.partner-hero { padding-top: 150px; background-image: none; }
+.entry-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 5vw; align-items: center; max-width: 1440px; margin: 0 auto 90px; text-align: left; }
+.entry-copy .partner-eyebrow { font-size: 12px; }
+.entry-copy h1 { font-size: clamp(52px, 5.7vw, 88px); letter-spacing: -.06em; line-height: 1.08; margin: 28px 0 24px; }
+.entry-copy .partner-description { font-size: 18px; line-height: 1.75; max-width: 510px; }
+.entry-copy .partner-actions { justify-content: flex-start; margin: 30px 0 24px; }
+.entry-footnote { display: flex; gap: 12px; align-items: center; font-size: 11px; color: var(--muted-dark); flex-wrap: wrap; }
+.entry-footnote i { height: 3px; width: 3px; background: var(--accent); border-radius: 50%; }
+.entry-visual { min-width: 0; position: relative; height: 510px; border-radius: 28px; background: var(--surface-soft); overflow: hidden; isolation: isolate; }
+.entry-coordinate { position: absolute; top: 25px; left: 26px; font: 10px monospace; color: var(--muted-dark); letter-spacing: .1em; }
+.entry-orbit { width: 480px; height: 480px; border: 1px solid var(--line-dark); border-radius: 50%; position: absolute; left: 60px; top: 80px; }
+.orbit-b { width: 620px; height: 620px; left: -10px; top: 10px; }
+.entry-product { position: absolute; left: 7%; right: 7%; top: 95px; background: var(--canvas); color: var(--ink); border: 1px solid var(--line); border-radius: 13px; box-shadow: 0 24px 40px var(--shadow); transform: rotate(-4deg); animation: entry-arrive .8s ease-out both; }
+.entry-window { display: flex; justify-content: space-between; padding: 14px 18px; border-bottom: 1px solid var(--line); font: 10px monospace; color: var(--muted); }.entry-window>span:first-child { color: var(--accent); letter-spacing: 3px; }
+.entry-product-body { padding: 28px; }.entry-product-body>.eyebrow { color: var(--muted); font-size: 10px; }.entry-product-body>strong { display: block; font-size: clamp(26px, 2.8vw, 43px); line-height: 1.12; letter-spacing: -.04em; margin: 16px 0 24px; font-weight: 500; }.entry-product-body em { color: var(--accent); font-style: normal; }
+.entry-product-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }.entry-product-cards>span { background: var(--canvas-soft); border-radius: 7px; padding: 15px; font-size: 10px; color: var(--muted); }.entry-product-cards b { display: block; color: var(--ink); font-size: 15px; margin-bottom: 6px; font-weight: 500; }
+.entry-code { margin-top: 22px; font: 10px monospace; color: var(--muted); }.entry-code>span,.entry-code>b { color: var(--accent); }
+.entry-floating { position: absolute; bottom: 29px; left: 11%; right: 5%; padding: 16px; background: var(--surface); border: 1px solid var(--line-dark); border-radius: 10px; display: flex; align-items: center; gap: 12px; transform: rotate(2deg); box-shadow: 0 8px 20px var(--shadow); }.entry-floating strong { display: block; font-size: 12px; }.entry-floating div>span { display: block; font-size: 11px; color: var(--muted-dark); margin-top: 4px; }.entry-check { border-radius: 50%; background: var(--accent); padding: 6px 10px; }
+.entry-stamp { position: absolute; right: 18px; top: 42px; font-size: 52px; font-weight: 750; letter-spacing: -.13em; transform: rotate(12deg); }.entry-stamp>span { color: var(--accent); }
+@keyframes entry-arrive { from { opacity: 0; translate: 0 20px; } to { opacity: 1; translate: 0 0; } }
+@media(max-width: 900px) { .entry-grid { gap: 25px; }.entry-copy h1 { font-size: 54px; }.entry-copy .partner-actions { flex-direction: column; align-items: flex-start; }.entry-visual { height: 490px; } }
+@media(max-width: 650px) { .partner-hero { padding-top: 125px; }.entry-grid { grid-template-columns: 1fr; margin-bottom: 50px; gap: 35px; }.entry-copy h1 { font-size: clamp(48px, 11vw, 70px); }.entry-copy .partner-actions { max-width: none; flex-direction: row; gap: 8px; }.entry-copy .partner-actions>a { padding: 15px 12px; font-size: 12px; }.entry-visual { height: 470px; }.entry-product-body>strong { font-size: 34px; } }
+@media(prefers-reduced-motion: reduce) { .entry-product { animation: none; } }

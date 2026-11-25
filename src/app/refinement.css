@@ -1,0 +1,26 @@
+/* Shared visual direction: editorial typography, sculptural hero, warm accent. */
+.partner-hero { background: var(--canvas); color: var(--ink); padding-top: 160px; }
+.entry-grid { max-width: 1440px; gap: 3vw; margin-bottom: 65px; min-height: 570px; }
+.entry-copy .partner-eyebrow { background: transparent; border-color: var(--line); color: var(--muted); }
+.entry-copy h1 { font-size: clamp(56px,6.2vw,98px); font-weight: 550; letter-spacing: -.065em; line-height: 1.04; }
+.entry-copy .partner-description { color: var(--muted); max-width: 460px; font-size: 17px; }
+.entry-copy .partner-secondary { background: transparent; color: var(--ink); border-color: var(--line); }
+.entry-footnote { color: var(--muted); }
+.entry-visual { height: 560px; background: transparent; border: 0; border-radius: 0; overflow: visible; }
+.entry-orbit { display: none; }
+.hero-sculpture { width: 100%; height: 100%; }
+.entry-coordinate { top: 5px; left: 30px; color: var(--muted); font-size: 9px; }
+.hero-sculpture-label { position: absolute; bottom: 8px; right: 20px; color: var(--muted); font: 9px monospace; letter-spacing: .14em; }
+.sculpture-turn { transform-origin: 300px 300px; animation: sculpture-drift 24s ease-in-out infinite alternate; }
+@keyframes sculpture-drift { from { transform: rotate(-8deg); } to { transform: rotate(12deg); } }
+.tech-universe { border-radius: 20px; border-color: var(--line); background: var(--canvas-soft); margin-bottom: 45px; }
+.partner-principles { color: var(--ink); }.partner-principles span { color: var(--muted); }.partner-principles>div+div { border-color: var(--line); }
+.hero-stack-ribbon { background: transparent; color: var(--muted); border-color: var(--line); }.hero-stack-ribbon svg { color: var(--muted); }
+.technology-section { padding-top: 110px; padding-bottom: 110px; }.technology-heading h2 { font-weight: 550; }
+.capabilities { margin: 0; border-radius: 0; padding: 100px 6vw; }.capabilities-intro { display: grid; grid-template-columns: 1fr 2fr; gap: 25px; align-items: start; }.capabilities-intro h2 { margin: 0; font-size: clamp(38px,4.7vw,70px); font-weight: 500; }.capabilities-intro>p:last-child { grid-column: 2; max-width: 450px; font-size: 16px; line-height: 1.7; }
+.capability-explorer { gap: 5vw; }.capability-panel { background: var(--canvas-soft); border: 1px solid var(--line); padding: 40px; }.capability-word { opacity: .9; font-size: clamp(80px,9vw,140px); }.capability-detail { padding-top: 145px; }
+.portfolio-section { padding-top: 110px; padding-bottom: 110px; }.project-grid { gap: 60px 30px; }.project-grid .project-card:first-child { grid-column: 1/-1; display: grid; grid-template-columns: 1fr; }.project-grid .project-card:first-child .project-art { height: 420px; }.project-grid .project-card:first-child .project-concept { width: 65%; left: 20%; height: 300px; top: 55px; }.project-grid .project-card:first-child .concept-word { font-size: 45px; }.project-grid .project-card:first-child .concept-panels>span { height: 80px; }.project-art { border-radius: 12px; }.project-card h3 { font-weight: 500; }
+.process-section { margin: 0; border-radius: 0; padding-top: 100px; padding-bottom: 100px; }.process-heading h2 { font-size: clamp(42px,5vw,76px); }.process-list { margin-top: 55px; }.process-row { padding: 30px 0; }.contact-section { margin: 0; border-radius: 0; }.faq-section { border-top: 1px solid var(--line-dark); }
+@media(max-width:900px) { .entry-grid { min-height: 480px; }.entry-visual { height: 430px; }.entry-copy h1 { font-size: 60px; } }
+@media(max-width:650px) { .partner-hero { padding-top: 125px; }.entry-grid { gap: 10px; }.entry-copy h1 { font-size: 56px; }.entry-visual { height: 350px; }.entry-copy .partner-description { font-size: 16px; }.entry-coordinate { display: none; }.hero-sculpture-label { bottom: 0; font-size: 8px; }.capabilities-intro { display: block; }.capabilities-intro h2 { margin: 22px 0; }.capabilities-intro>p:last-child { font-size: 15px; }.capability-panel { padding: 25px; }.project-grid .project-card:first-child { grid-column: auto; }.project-grid .project-card:first-child .project-art { height: 300px; }.project-grid .project-card:first-child .project-concept { width: 85%; left: 12%; height: 220px; top: 60px; }.project-grid .project-card:first-child .concept-word { font-size: 25px; }.project-grid .project-card:first-child .concept-panels>span { height: 42px; }.technology-section,.capabilities,.portfolio-section { padding-top: 70px; padding-bottom: 70px; } }
+@media(prefers-reduced-motion:reduce) { .sculpture-turn { animation: none; } }

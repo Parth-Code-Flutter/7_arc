@@ -1,0 +1,10 @@
+// Replace these references with approved 7ARC case studies when available.
+export const projectCategories = ["All", "Full-stack", "Mobile", "AI / ML", "Backend", "Cloud", "Product design"] as const;
+export const projects = [
+  { name: "Medusa", category: "Full-stack", title: "Commerce without the constraints.", description: "A public commerce platform reference for connected storefront and backend experiences.", source: "https://github.com/medusajs/medusa", tags: ["Commerce", "TypeScript", "APIs"], visual: "commerce" },
+  { name: "AppFlowy", category: "Mobile", title: "A workspace that moves with you.", description: "An open-source collaborative workspace reference with a Flutter-based application.", source: "https://github.com/AppFlowy-IO/AppFlowy", tags: ["Flutter", "Workspace", "Cross-platform"], visual: "mobile" },
+  { name: "Dify", category: "AI / ML", title: "From prompts to connected workflows.", description: "A public reference for building AI applications, agents, and retrieval workflows.", source: "https://github.com/langgenius/dify", tags: ["AI", "Workflows", "LLMs"], visual: "ai" },
+  { name: "Strapi", category: "Backend", title: "Content, structured for possibility.", description: "An open-source headless CMS reference for APIs and content management.", source: "https://github.com/strapi/strapi", tags: ["Node.js", "CMS", "APIs"], visual: "backend" },
+  { name: "Coolify", category: "Cloud", title: "A home for everything you deploy.", description: "A self-hostable deployment platform reference for applications, databases, and services.", source: "https://github.com/coollabsio/coolify", tags: ["Cloud", "Deployment", "Infrastructure"], visual: "cloud" },
+  { name: "AppFlowy workspace", category: "Product design", title: "Complex tools. Clear interactions.", description: "A second look at AppFlowy as a reference for workspace navigation and information design.", source: "https://github.com/AppFlowy-IO/AppFlowy", tags: ["UX patterns", "Collaboration", "Interface"], visual: "design" },
+] as const;

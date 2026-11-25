@@ -1,0 +1,29 @@
+:root {
+  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-heading: var(--font-body);
+  --font-label: var(--font-body);
+}
+
+body { font-family: var(--font-body); }
+button, input, textarea, select { font-family: inherit; }
+.font-display, .font-lab, .eyebrow { font-family: var(--font-body); }
+.font-display { font-style: normal; font-weight: 600; }
+.font-display .italic { font-style: normal; }
+.studio-title h1 { font-weight: 650; letter-spacing: -.055em; line-height: 1; }
+.studio-title h1 em,
+.scene-browser-body em,
+.capabilities-intro h2 em,
+.process-heading h2 em {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 500;
+}
+.capability-word { font-family: var(--font-heading); font-weight: 750; font-size: clamp(80px, 10vw, 150px); }
+.process-heading h2 { font-family: var(--font-heading); letter-spacing: -.045em; line-height: 1.08; }
+.capabilities-intro h2 { line-height: 1.12; letter-spacing: -.04em; }
+.studio-summary p, .capability-detail > p, .process-row p { line-height: 1.75; }
+.eyebrow, .font-lab { letter-spacing: .08em; }
+@media (max-width: 767px) {
+  .studio-title h1 { font-size: clamp(48px, 10.5vw, 80px); }
+  .capability-word { font-size: 85px; }
+}
