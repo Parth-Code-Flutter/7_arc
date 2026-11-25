@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export function ProcessTrack({ steps }: { steps: readonly (readonly [string, string])[] }) {
+export function ProcessTrack({ steps }: { steps: readonly (readonly string[])[] }) {
   const section = useRef<HTMLElement>(null);
   const [progress, setProgress] = useState(0);
 
